@@ -276,3 +276,42 @@ header.hero .hero-image{
     bottom:30px;
     right: 160px;
 }
+
+section{
+    padding: 4rem 0;
+}
+
+section.top-products{
+    background: var(--light);
+}
+
+.section-heading{
+    font-family: "Raleway-bold";
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.section-heading:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image:url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* position: absolute; */
+    bottom: 40px;
+}
+
+section.top-products .food-slider .food-cart{
+    background: var(--heaven);
+    padding: 1.5rem 0;
+    border-radius: 4px;
+}
+
+section.top-products .food-slider .food-cart .product-image img{
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+    padding-bottom: 1rem;
