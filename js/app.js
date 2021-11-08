@@ -7,7 +7,14 @@ $(document).ready(function(){
     nextArrow:".next-btn",
         
     });
+
+    $('.nav-trigger').click(function(){
+        $('.site-content-wrapper').toggleClass('scaled');
+    })
+    
 });
+
+
 
 // $('.food-slider').slick({
 //     infinite: true,

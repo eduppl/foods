@@ -84,6 +84,61 @@ body{
     }
 }
 
+.main-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-background{
+    width: 100%;
+    height: 100%;
+    background: var(--light);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.nav-trigger{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px;
+    display: none;
+}
+
+.nav-trigger svg{
+    transform:rotate(90deg) scaleX(-1);
+    width: 40px;
+    height: 40px;
+    /* display: none; */
+}
+
+.site-content-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--heaven);
+    z-index: 2;
+    transition: all .3s ease;
+}
+
+.site-content-wrapper.scaled{
+    /* transform: scale(0.9) translateX(90%); */
+    transform: scale(0.9) translate(90%);
+    border-radius: 3px;
+    box-shadow: 0 3px 10px 0 var(--secondary);
+}
+
+.site-content{
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+}
+
 header.topbar{
 
     background-color:var(--secondary);
@@ -792,3 +847,78 @@ footer.copyright a{
     color: var(--primary);
     text-decoration: none;
 } 
+
+.nav-background .mobile-logo{
+    padding: 1rem;
+}
+
+/* .nav-background .mobile-nav{
+    padding: 1rem;
+} */
+
+.nav-background .mobile-logo{
+    list-style-type: none;
+}
+
+.nav-background .mobile-nav ul li{
+    margin-bottom: 1rem;
+}
+
+.nav-background .mobile-nav ul li a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: "Raleway-medium";
+}
+
+.nav-background .mobile-nav ul li a:hover{
+    color: var(--primary);
+}
+
+.nav-background .contact, .nav-background .time{
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.nav-background .contact img, .nav-background .time img{
+    margin-right: 1rem;
+}
+
+.nav-background .contact h5, .nav-background .time h5{
+    font-family: "Ralway-bold";
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.nav-background .contact h6, .nav-background .time {
+    font-size: 0.75rem;
+}
+
+.nav-background .cart > div{
+    margin-bottom: 2rem;
+}
+
+.nav-background .cart > div img{
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.nav-background .cart > div a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-family: "Raleway-bold";
+}
+
+@media (max-width:992px){
+    .nav-trigger{
+        display: block;
+    }
+    header.topbar, nav{
+        display: none;
+    }
+
+    header.hero .header-image{
+        right: -160px;
+        top: 100px;
+    }
+}
