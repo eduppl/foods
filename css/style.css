@@ -208,7 +208,6 @@ nav .navbar a:hover{
     position:absolute;
     bottom: -20px;
     left: 0%;
-    /* transform: translate(x-50%); */
     z-index:-1;
 }
 
@@ -219,7 +218,6 @@ header.hero{
     background-repeat:no-repeat;
     overflow: hidden;
 }
-
 
 header.hero{
     position: relative;
@@ -487,7 +485,6 @@ section.our-services .services-card .icons{
     margin-right: auto;
     left: 0%;
     right: 0%;
-    /* transform: translate(x-50%); */
 }
 
 section.our-services .services-card h2{
